@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "uzdabrawza"
-version = "1.0.3"
+version = "1.0.4"
 description = "The Anal-Queen of AI Browser Automation - A beautifully fucked-up browser automation script that actually works"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -45,8 +45,18 @@ requires-python = ">=3.11"
 dependencies = [
     "browser-use>=0.1.0",
     "python-dotenv>=1.0.0",
-    "Pillow>=9.0.0",
+    "Pillow>=12.3.0",
     "patchright>=1.0.0",
+    # Floors for advisories in packages we only get transitively, through
+    # browser-use. Naming them here is the only way to raise them: the resolver
+    # has no reason to pick a newer version otherwise, and a vulnerability
+    # arriving through a dependency counts exactly the same as one we depended
+    # on directly. Drop an entry once browser-use's own floor passes it, so
+    # this does not quietly rot into a set of stale pins.
+    "aiohttp>=3.14.1",
+    "click>=8.3.3",
+    "mcp>=1.28.1",
+    "pypdf>=6.14.2",
 ]
 
 [project.optional-dependencies]

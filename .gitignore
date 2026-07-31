@@ -196,3 +196,6 @@ device_id
 # Browser automation artifacts
 extensions/
 profiles/
+
+# Local release tooling — never committed
+git-update.sh
