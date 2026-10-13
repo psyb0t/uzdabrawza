@@ -2,6 +2,8 @@
 
 # 🏴‍☠️ uzdabrawza - The Anal-Queen of AI Browser Automation 🏴‍☠️
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/psyb0t/uzdabrawza)
+
 **A beautifully fucked-up Skynet-powered browser automation script that harnesses neural brainfuck and machine learning chaos to give zero shits about anything while somehow still working perfectly. Smells like smegma but runs like a dream.**
 
 ![uzdabrawza screenshot](assets/screenshot.png)
