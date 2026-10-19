@@ -199,3 +199,4 @@ profiles/
 
 # Local release tooling — never committed
 git-update.sh
+git-update.sh.debot
